@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this keyword</title>
+</head>
+<body>
+    <h1>this keword</h1>
+    <script>
+        let student = {
+            name: "harshith",
+            course: "JavaScript",
+
+            displayDetails() {
+                console.log(this.name);
+                console.log(this.course);
+            }
+        };
+
+        student.displayDetails();
+    </script>
+    
+</body>
+</html>

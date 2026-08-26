@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple parameters</title>
+</head>
+<body>
+    <h1>
+        multiple parameters
+    </h1>
+    <script>
+        function calculateTotal(price, quantity, discount) {
+            let total = price * quantity;
+            let finalAmount = total - (total * discount / 100);
+
+            return finalAmount;
+        }
+
+        console.log(calculateTotal(1000, 2, 10));
+    </script>
+    
+</body>
+</html>
